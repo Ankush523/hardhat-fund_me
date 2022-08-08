@@ -1,9 +1,4 @@
-//import 
-//main function
-//calling main function
-const {networkConfig} = require("../helper-hardhat-config")
-
-const ethUsdPriceFeedAddress = networkConfig[chainId]["ethUsdPriceFeed"]
+const {network} = require("hardhat")
 
 module.exports = async ({getNamedAccounts, deployments}) => {
     const {deploy,log} = deployments
